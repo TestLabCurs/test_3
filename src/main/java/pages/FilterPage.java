@@ -19,8 +19,7 @@ public class FilterPage {
     }
 
     public void action() throws InterruptedException {
-        webDriver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-
+       
         webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         String adressSaved = "//div[@class=" + "'" + fieldSaved + "'" + "]";
